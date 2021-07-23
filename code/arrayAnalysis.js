@@ -1,5 +1,4 @@
 function analyze(arr) {
-	console.log(arr);
 	if (!arr) {
 		throw new Error("no argument passed");
 	} else {
@@ -12,7 +11,7 @@ function analyze(arr) {
 		let length = arr.length;
 		let average = findAverage([...arr]);
 		let min = arr[0];
-		let max = arr[length - 1];
+		let max = arr[arr.length - 1];
 
 		return {
 			average,
