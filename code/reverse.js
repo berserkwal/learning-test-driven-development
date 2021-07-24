@@ -1,10 +1,10 @@
 function reverseString(string) {
-	const reverse = [];
-
-	for (let i = string.length - 1; i >= 0; i--) {
-		reverse.push(string[i]);
-	}
-	return reverse.join("");
+	return string
+		.split("")
+		.sort(() => {
+			return -1;
+		})
+		.join("");
 }
 
 module.exports = reverseString;
