@@ -6,12 +6,12 @@ function analyze(arr) {
 			throw new Error("argument should not be an empty array");
 		}
 
-		ascSort(arr);
+		const sortedArr = ascSort([...arr]);
 
 		let length = arr.length;
-		let average = findAverage([...arr]);
-		let min = arr[0];
-		let max = arr[arr.length - 1];
+		let average = +findAverage(arr).toFixed(2);
+		let min = sortedArr[0];
+		let max = sortedArr[sortedArr.length - 1];
 
 		return {
 			average,

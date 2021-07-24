@@ -18,6 +18,4 @@ function caesar(string, offset) {
 		.join("");
 }
 
-console.log(caesar("this worked well", 3));
-
 module.exports = caesar;
